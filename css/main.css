@@ -56,4 +56,16 @@
 .project-container {
  grid-column: 2 / 3;
  background-color: lightblue;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+
+.project-tile {
+ width: 30%;
+ height: auto;
+}
+
+.thumbnail-image {
+ width: 100%;
+ height: auto;
 }
