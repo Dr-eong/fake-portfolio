@@ -1,0 +1,59 @@
+/* main style */
+
+/* welcome section */
+#welcome-section {
+ width: 100%;
+ height: 100vh;
+ display: flex;
+ place-items: center;
+ animation: welcomeBack 20s linear infinite;
+}
+
+#welcome-section h1 {
+ font-size: 5rem;
+ text-align: center;
+ margin: 0 auto;
+ color: beige;
+}
+
+#welcome-section h1::after {
+ content:"I want to be a FrontEnd-Developer";
+ font-size: 2.3rem;
+ display: block;
+ margin-top: 10px;
+ color: burlywood;
+}
+
+@keyframes welcomeBack {
+ 0% {
+  background-color: cornflowerblue;
+ }
+ 20% {
+  background-color: dodgerblue; 
+ }
+ 40% {
+  background-color:darkcyan;
+ }
+ 60% {
+  background-color:steelblue;
+ }
+ 80% {
+  background-color: dodgerblue;
+ }
+ 100% {
+  background-color: cornflowerblue;
+ }
+}
+
+/* project section */
+
+#projects {
+ display: grid;
+ grid-template-columns: minmax(5rem, 1fr) minmax(min-content,100rem) minmax(5rem, 1fr);
+ background-color: beige;
+}
+
+.project-container {
+ grid-column: 2 / 3;
+ background-color: lightblue;
+}
