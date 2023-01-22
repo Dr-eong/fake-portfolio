@@ -33,3 +33,14 @@ header {
 .nav-link a:hover {
  color:rebeccapurple;
 }
+
+/* media query */
+@media (max-width: 650px) {
+  header {
+   justify-content: center;
+ }
+ .nav-list {
+  font-size: 2rem;
+  margin-right: 0;
+ }
+}
